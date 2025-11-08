@@ -1,0 +1,201 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    overflow: hidden;
+    background: linear-gradient(to right, lightblue, pink);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-out;
+}
+
+.container {
+    background-color: #ffffff;
+    backdrop-filter: blur(5px);
+    border: 0.3px solid rgba(0, 0, 0, 50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 5);
+    opacity: 1;
+    z-index: 1;
+}
+
+.container2 {
+    background-color: #ffffff;
+    backdrop-filter: blur(5px);
+    border: 0.3px solid rgba(0, 0, 0, 5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 5);
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+}
+
+.container * {
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+.container2 * {
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+input:focus {
+    outline: 0.1px solid transparent;
+}
+
+input:active {
+    outline: none;
+}
+
+.userb input, .newuserb input {
+    padding: 10px 20px;
+    border: 0.2px solid #e5e5e5;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+}
+
+.userb input:hover, .newuserb input:hover, .passb input:hover, .newpassb input:hover, .newpassc input:hover {
+    border: 0.4px solid #000;
+}
+
+.userb input:focus, .passb input:focus {
+    border: 0.2px solid #000;
+}
+
+.passb input, .newpassb input, .newpassc input {
+    padding: 10px 20px;
+    border: 0.2px solid #e5e5e5;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    position: relative;
+}
+
+.giris input, .signup input {
+    padding: 10px 50px;
+    border: 0.2px solid #1c76cb;
+    border-radius: 8px;
+    background-color: #00bbff;
+    cursor: pointer;
+}
+
+.giris input:hover, .signup input:hover {
+    border: 0.3px solid #000;
+    background-color: #00abe9e2;
+}
+
+.passb #showpass {
+    position: absolute;
+    top: 50%;
+    right: 53px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.userb img {
+    width: 20px;
+    position: absolute;
+    top: 34%;
+    right: 50px;
+}
+
+.newuserb img {
+    width: 20px;
+    position: absolute;
+    top: 26.5%;
+    right:  55px;
+}
+
+.passb img {
+    width: 20px;
+    position: absolute;
+    top: 49%;
+    right: 50px;
+    z-index: 0;
+}
+
+.newpassb #showpass2 {
+    position: absolute;
+    top: 42.6%;
+    right: 58px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.newpassc #showpass3 {
+    position: absolute;
+    top: 57.6%;
+    right: 58px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.newpassc img {
+    width: 20px;
+    position: absolute;
+    top: 56.6%;
+    right: 55px;
+}
+
+.newpassc #closed-eye3 {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.newpassc #opened-eye3 {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.newpassb img {
+    width: 20px;
+    position: absolute;
+    top: 41.6%;
+    right: 55px;
+}
+
+.newpassb #closed-eye2 {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.newpassb #opened-eye2 {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.passb #closed-eye {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.passb #opened-eye {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.out {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
